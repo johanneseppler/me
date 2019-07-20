@@ -5,6 +5,7 @@
 function pikarun() {
   "use strict"
 
+  console.log("Is this working?");
   // type 'pikarun' on your keyboard
   let key = [80, 73, 75, 65, 82, 85, 78]
   // let key = [80]
