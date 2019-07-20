@@ -12,7 +12,7 @@ function pikarun() {
   // let ck = 0
   // let max = key.length
   //
-  // let pikaRun = function () {
+  let pikaRun = function () {
 
     let data = 'https://i.imgur.com/g99m5gz.gif'
 
@@ -41,8 +41,8 @@ function pikarun() {
       img.parentNode.removeChild(img)
     }, 4300)
 
-  // }
-  //
+  }
+
   // let record = function (e) {
   //
   //   if (e.which === key[ck]) {
@@ -57,12 +57,12 @@ function pikarun() {
   //   }
   //
   // }
-  //
-  // let init = function (data) {
-  //   document.addEventListener('keyup', record)
-  // }
-  //
-  // let data = 'https://i.imgur.com/g99m5gz.gif'
-  //
-  // init(data)
+
+  let init = function (data) {
+    document.addEventListener('click', pokeRun)
+  }
+
+  let data = 'https://i.imgur.com/g99m5gz.gif'
+
+  init(data)
 }
