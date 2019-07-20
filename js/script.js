@@ -32,7 +32,7 @@ function pikarun() {
     // },50)
 
     window.setTimeout(function () {
-      img.style.left = 'calc(100% + 500px)'
+      img.style.left = 'calc(100% + 1000px)'
     }, 50)
 
     window.setTimeout(function () {
