@@ -1,9 +1,7 @@
 function pikarun() {
   "use strict"
 
-  console.log("Is this working?")
-
-  var data = 'https://i.imgur.com/g99m5gz.gif'
+  var data = '../img/pikar.gif'
 
   var shock = document.createElement('div')
   var img = new Image()
@@ -21,13 +19,16 @@ function pikarun() {
   document.body.appendChild(img)
 
   window.setTimeout(function () {
-    img.style.left = 'calc(100% + 1000px)'
+    img.style.left = 'calc(100% + 800px)'
   }, 100)
 
   window.setTimeout(function () {
     img.parentNode.removeChild(img)
   }, 5000)
+
 }
+
+// add ratings
 
 $(".stars").each(function() {
   var i;
@@ -39,14 +40,23 @@ $(".stars").each(function() {
   }
 });
 
+// Particles effect
+
 window.onload = function() {
   Particles.init({
 
     // normal options
     selector: '.background',
-    maxParticles: 200,
-    color: '#0F5FC3',
-    minDistance: 50,
+    maxParticles: 250,
+    speed: 0.4,
+    color: [
+      '#0F5FC3',
+      '#3e7ecf',
+      '#6f9fdb',
+      '#9fbfe7'
+    ],
+    minDistance: 75,
+    sizeVariations: 3,
     connectParticles: true,
 
     // options for breakpoints
