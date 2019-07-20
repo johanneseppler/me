@@ -8,8 +8,10 @@ function pikarun() {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = data
-  img.style.width = '450px'
-  img.style.height = '350px'
+  // img.style.width = '450px'
+  // img.style.height = '350px'
+  img.style.width = '360px'
+  img.style.height = '280px'
   img.style.transition = '4s all'
   img.style.position = 'fixed'
   img.style.left = '-400px'
@@ -26,3 +28,14 @@ function pikarun() {
     img.parentNode.removeChild(img)
   }, 5000)
 }
+
+$(".stars").each(function() {
+  var i;
+  for (i = 0; i < $(this).attr('nr'); i++) {
+    $(this).append('<li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>');
+  }
+  console.log(i);
+  for (; i < 5; i++) {
+    $(this).append('<li class="list-inline-item mx-0"><i class="far fa-star"></i></li>');
+  }
+});
