@@ -34,7 +34,6 @@ $(".stars").each(function() {
   for (i = 0; i < $(this).attr('nr'); i++) {
     $(this).append('<li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>');
   }
-  console.log(i);
   for (; i < 5; i++) {
     $(this).append('<li class="list-inline-item mx-0"><i class="far fa-star"></i></li>');
   }
