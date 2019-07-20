@@ -59,7 +59,7 @@ function pikarun() {
   // }
 
   let init = function (data) {
-    document.addEventListener('click', pokeRun)
+    document.addEventListener('click', pikaRun)
   }
 
   let data = 'https://i.imgur.com/g99m5gz.gif'
