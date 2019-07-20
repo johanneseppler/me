@@ -1,6 +1,6 @@
-$(document).ready(function () {
-  $("#pikaexe").click(pikarun());
- });
+// $(document).ready(function () {
+//   $("#pikaexe").click(pikarun());
+//  });
 
 function pikarun() {
   "use strict"
