@@ -14,8 +14,6 @@ function pikarun() {
   //
   let pikaRun = function () {
 
-    let data = 'https://i.imgur.com/g99m5gz.gif'
-
     var shock = document.createElement('div')
     var img = new Image()
     img.src = data
@@ -59,7 +57,7 @@ function pikarun() {
   // }
 
   let init = function (data) {
-    document.addEventListener('click', pikaRun)
+    ("#pika").addEventListener('click', pikaRun)
   }
 
   let data = 'https://i.imgur.com/g99m5gz.gif'
