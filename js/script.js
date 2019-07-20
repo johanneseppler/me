@@ -29,13 +29,13 @@ function pikarun() {
 
     document.body.appendChild(img)
 
-    window.setTimeout(function(){
-      img.style.left = 'calc(50% - 200px)'
-    },50)
+    // window.setTimeout(function(){
+    //   img.style.left = 'calc(50% - 200px)'
+    // },50)
 
-    // window.setTimeout(function () {
-    //   img.style.left = 'calc(100% + 500px)'
-    // }, 50)
+    window.setTimeout(function () {
+      img.style.left = 'calc(100% + 500px)'
+    }, 50)
 
     window.setTimeout(function () {
       img.parentNode.removeChild(img)
