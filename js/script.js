@@ -6,13 +6,15 @@ function pikarun() {
   "use strict"
 
   console.log("Is this working?");
-  // type 'pikarun' on your keyboard
-  let key = [80, 73, 75, 65, 82, 85, 78]
-  // let key = [80]
-  let ck = 0
-  let max = key.length
+  // // type 'pikarun' on your keyboard
+  // let key = [80, 73, 75, 65, 82, 85, 78]
+  // // let key = [80]
+  // let ck = 0
+  // let max = key.length
+  //
+  // let pikaRun = function () {
 
-  let pikaRun = function () {
+    let data = 'https://i.imgur.com/g99m5gz.gif'
 
     var shock = document.createElement('div')
     var img = new Image()
@@ -39,28 +41,28 @@ function pikarun() {
       img.parentNode.removeChild(img)
     }, 4300)
 
-  }
-
-  let record = function (e) {
-
-    if (e.which === key[ck]) {
-      ck++
-    } else {
-      ck = 0
-    }
-
-    if (ck >= max) {
-      pikaRun()
-      ck = 0
-    }
-
-  }
-
-  let init = function (data) {
-    document.addEventListener('keyup', record)
-  }
-
-  let data = 'https://i.imgur.com/g99m5gz.gif'
-
-  init(data)
+  // }
+  //
+  // let record = function (e) {
+  //
+  //   if (e.which === key[ck]) {
+  //     ck++
+  //   } else {
+  //     ck = 0
+  //   }
+  //
+  //   if (ck >= max) {
+  //     pikaRun()
+  //     ck = 0
+  //   }
+  //
+  // }
+  //
+  // let init = function (data) {
+  //   document.addEventListener('keyup', record)
+  // }
+  //
+  // let data = 'https://i.imgur.com/g99m5gz.gif'
+  //
+  // init(data)
 }
