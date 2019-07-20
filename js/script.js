@@ -38,3 +38,38 @@ $(".stars").each(function() {
     $(this).append('<li class="list-inline-item mx-0"><i class="far fa-star"></i></li>');
   }
 });
+
+window.onload = function() {
+  Particles.init({
+
+    // normal options
+    selector: '.background',
+    maxParticles: 200,
+    color: '#0F5FC3',
+    minDistance: 50,
+    connectParticles: true,
+
+    // options for breakpoints
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          maxParticles: 100,
+          color: '#0F5FC3',
+          connectParticles: false
+        }
+      }, {
+        breakpoint: 425,
+        options: {
+          maxParticles: 50,
+          connectParticles: true
+        }
+      }, {
+        breakpoint: 320,
+        options: {
+          maxParticles: 0 // disables particles.js
+        }
+      }
+    ]
+  });
+};
