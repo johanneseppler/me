@@ -47,26 +47,41 @@ window.onload = function() {
 
     // normal options
     selector: '.background',
-    maxParticles: 250,
-    speed: 0.4,
+    maxParticles: 350,
+    speed: 0.3,
     color: [
-      '#0F5FC3',
-      '#3e7ecf',
-      '#6f9fdb',
-      '#9fbfe7'
+      '#1776ed', // primary
+      '#2f84ef',
+      '#4792f1',
+      '#5ea0f3',
+      '#76aef4',
+      '#ef9a2f' // orange
     ],
-    minDistance: 75,
-    sizeVariations: 3,
+    minDistance: 70,
+    sizeVariations: 4,
     connectParticles: true,
 
     // options for breakpoints
     responsive: [
       {
+        breakpoint: 992,
+        maxParticles: 250,
+        color: [
+          '#1776ed', // primary
+          '#4792f1',
+          '#76aef4',
+          '#ef9a2f' // orange
+        ],
+        minDistance: 50,
+        sizeVariations: 3,
+        connectParticles: true,
+      }, {
         breakpoint: 768,
         options: {
           maxParticles: 100,
           color: '#0F5FC3',
-          connectParticles: false
+          minDistance: 30,
+          connectParticles: true
         }
       }, {
         breakpoint: 425,
