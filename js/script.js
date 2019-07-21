@@ -28,6 +28,15 @@ function pikarun() {
 
 }
 
+// // append text
+//
+// $(window).ready(function(){
+//   setTimeout(function(){
+//     $("#appendhere").append("<p class='lead mb-5'>My <span class='text-primary'>interdisciplinary background</span>,  <span class='text-primary'>professional experience</span> &amp;<span class='text-primary'>academic drive</span> make me a good fit for the program</p><p class='lead mb-5'>I'm 25 years old, half German 🇩🇪, half Italian 🇮🇹<br>  My background was originally business administration<br>but recently I have been focussing on computer science.<br><br>I love problem solving and can navigate (almost) any situation you throw me in.<br>I believe teams work best, when everyone gets to focus on what they love doing!<br>That's why you need someone who can organize and communicate<br>as well as help out with many different tasks.<br><br>That someone could be <span class='text-primary'>me</span> 🤯</p><p class='mt-5'>(Also, my humor may be questionable at times...)</p><p class='mt-1'>Want to get in touch or have any questions? <br>mail me<a href='mailto:philipp.wiedemann@tum.de'>@tum.de</a></p>")
+//   }, 2000);
+//
+// });
+
 // add ratings
 
 $(".stars").each(function() {
@@ -65,16 +74,18 @@ window.onload = function() {
     responsive: [
       {
         breakpoint: 992,
-        maxParticles: 250,
-        color: [
-          '#1776ed', // primary
-          '#4792f1',
-          '#76aef4',
-          '#ef9a2f' // orange
-        ],
-        minDistance: 50,
-        sizeVariations: 3,
-        connectParticles: true,
+        options: {
+          maxParticles: 250,
+          color: [
+            '#1776ed', // primary
+            '#4792f1',
+            '#76aef4',
+            '#ef9a2f' // orange
+          ],
+          minDistance: 50,
+          sizeVariations: 3,
+          connectParticles: true,
+        }
       }, {
         breakpoint: 768,
         options: {
@@ -86,8 +97,7 @@ window.onload = function() {
       }, {
         breakpoint: 425,
         options: {
-          maxParticles: 50,
-          connectParticles: true
+          maxParticles: 50 // disables particles.js
         }
       }, {
         breakpoint: 320,

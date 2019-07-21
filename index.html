@@ -20,7 +20,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-  <link href="css/stylesheet.css" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -72,22 +71,35 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 
-      <div class="w-100">
-        <h1 class="mb-0">Hi, I'm
+      <div class="w-100" id="appendhere">
+        <h1 class="mt-5 mb-1">Hi, I'm
           <span class="text-primary">Philipp</span>
         </h1>
-        <div class="subheading mb-5">
-          I'd love to take part in the TMS fall '19 batch!
+        <div class="subheading mb-3">
+          and I'd love to take part in the TMS fall 2019 batch!
         </div>
-        <!-- <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p> -->
-        <p class="mb-5">
-          🇩🇪 German<br>
-          🇮🇹 Italian<br>
-          25 years old<br>
-          Tech enthusiast
+        <p class="lead mb-5">
+          My <span class="text-primary">interdisciplinary background</span>,
+          <span class="text-primary">professional experience</span> &amp;
+          <span class="text-primary">academic drive</span> make me a good fit for the program
         </p>
-        <p class="mt-5">Want to get in touch? <br> mail:
-          <a href="mailto:philipp.wiedemann@tum.de">philipp.wiedemann@tum.de</a></p>
+        <p class="lead mb-5">
+          I'm 25 years old, half German 🇩🇪, half Italian 🇮🇹<br>
+          My background was originally business administration<br>
+             but recently I have been focussing on computer science.<br><br>
+          I love problem solving and can navigate (almost) any situation you throw me in.<br>
+          I believe teams work best, when everyone gets to focus on what they love doing!<br>
+          That's why you need someone who can organize and communicate<br>
+          as well as help out with many different tasks.<br>
+          <br>
+          That someone could be <span class="text-primary">me</span> 🤯
+        </p>
+        <p class="mt-5">
+          (Also, my humor may be questionable at times...)
+        </p>
+        <p class="mt-1">Want to get in touch or have any questions? <br>mail me
+          <a href="mailto:philipp.wiedemann@tum.de">@tum.de</a>
+        </p>
       </div>
     </section>
 
@@ -99,21 +111,32 @@
         <h2 class="mb-5">What am I good at?</h2>
 
         <ul class="fa-ul my-2">
-          <li>
+          <li class="lead">
             <i class="fa-li fas fa-rocket"></i>
-            Ideation: creative, out-of-the-box, around-the-box, basically all of the box-thinking stuff</li>
-          <li>
+            Ideation: creative, out-of-the-box, around-the-box, basically all of the box-thinking stuff
+          </li>
+          <li class="lead">
             <i class="fa-li fas fa-rocket"></i>
-            Customer Research: I'm not afraid of talking to people (fluent in 🇩🇪🇬🇧🇮🇹 and some knowledge of 🇪🇸🇫🇷)</li>
-          <li>
+            Customer Research: I'm not afraid of talking to people (fluent in 🇩🇪🇬🇧🇮🇹 and some knowledge of 🇪🇸🇫🇷)
+          </li>
+          <li class="lead">
             <i class="fa-li fas fa-rocket"></i>
-            Development Support: I know enough programming to help build a basic website or application</li>
-          <li>
+            Progress Presentation: also no worried about presenting in front of (many) people
+          </li>
+          <li class="lead">
             <i class="fa-li fas fa-rocket"></i>
-            Progress Presentation: also no worried about presenting in front of (many) people</li>
+            Business analytics: I don't shy away from numbers or large excel sheets
+          </li>
+          <li class="lead">
+            <i class="fa-li fas fa-rocket"></i>
+            Development Support: I know enough programming to help build a basic website or application
+          </li>
         </ul>
 
         <div class="subheading mt-5">Need a business developer?</div>
+        <p class="mt-0">I can quickly put together sleek presentations and powerful excel sheets.<br>
+          Operating a wide range of CMS and CRM tools is also no issue.<br>
+          Lastly, I can analyze and visualize data using VBA, SQL, Matlab and R.</p>
         <ul class="list-inline dev-icons mt-1">
           <li class="list-inline-item">
             <i class="fas fa-file-excel fa-xs" title="Excel (incl. VBA)"></i>
@@ -140,6 +163,9 @@
         </ul>
 
         <div class="subheading mt-5">Can I help develop something?</div>
+        <p class="mt-0">Over the past years I have participated in online &amp; university courses on programming.<br>
+          I have developed basic (web) applications in Python, Java &amp; JavaScript.<br>
+          But, I know when to leave the job to the pros - or when to ask google or stackoverflow 😉</p>
         <ul class="list-inline dev-icons mt-1">
           <li class="list-inline-item">
             <i class="fas fa-database fa-xs" title="SQL &amp; XQuery"></i>
@@ -179,21 +205,21 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
 
-      <div class="w-100">
+      <div class="w-100" id="accordion">
         <h2 class="mb-5">Do I have any practical experience?</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseHB" role="button" aria-expanded="false" aria-controls="collapseHB">
-              <h3 class="mb-0">Working Student - Business Analysis &amp; Operations
+              <h3 class="mb-0">Business Analysis &amp; Operations
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">happybrush</div>
-            <div class="collapse" id="collapseHB">
+            <div class="subheading mb-2">happybrush, Working Student</div>
+            <div class="collapse" id="collapseHB" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Startup for environmentally conscious dental care products</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Startup for environmentally conscious dental care products</p>
+                <ul class="pl-4">
                   <li>Analysis of customer behavior</li>
                   <li>Support improvement &amp; refinement of forecasting</li>
                   <li>Development of automated business analytics</li>
@@ -211,15 +237,15 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseTA" role="button" aria-expanded="false" aria-controls="collapseTA">
-              <h3 class="mb-0">Teaching Assistant - Implementation of Database Systems
+              <h3 class="mb-0">Implementation of Database Systems
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">Chair for Database Systems, TUM</div>
-            <div class="collapse" id="collapseTA">
+            <div class="subheading mb-2">Chair for Database Systems (TUM), Teaching Assistant</div>
+            <div class="collapse" id="collapseTA" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Informatics Master course<br>Conduct tutorials on the topics</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Conduct tutorials for a Informatics Master course on the topics</p>
+                <ul class="pl-4">
                   <li>Transaction handling, recovery, concurrency, security, in-memory databases</li>
                   <li>Deductive &amp; distributed databases, business applications (OLTP/OLAP)</li>
                   <li>SQL, XML, XQuery</li>
@@ -236,15 +262,15 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseUTUM" role="button" aria-expanded="false" aria-controls="collapseUTUM">
-              <h3 class="mb-0">Working Student - New Venture Creation
+              <h3 class="mb-0">New Venture Creation
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">UnternehmerTUM</div>
-            <div class="collapse" id="collapseUTUM">
+            <div class="subheading mb-2">UnternehmerTUM, Working Student</div>
+            <div class="collapse" id="collapseUTUM" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Project FC Bayern HackDays (Hackathon with 6 partners &amp; 350 participants)</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Project FC Bayern HackDays (Hackathon with 6 partners &amp; 350 participants)</p>
+                <ul class="pl-4">
                   <li>Support of participant management</li>
                   <li>Conception, planning and preparation of the event website</li>
                   <li>Curation of the event web tool</li>
@@ -261,15 +287,15 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseC" role="button" aria-expanded="false" aria-controls="collapseC">
-              <h3 class="mb-0">Intern - Business Development
+              <h3 class="mb-0">Business Development
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">Coureon</div>
-            <div class="collapse" id="collapseC">
+            <div class="subheading mb-2">Coureon, Intern</div>
+            <div class="collapse" id="collapseC" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Startup with a digital cross-border logistics solution for online merchants</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Startup with a digital cross-border logistics solution for online merchants</p>
+                <ul class="pl-4">
                   <li>Market research and analysis of competitors</li>
                   <li>Acquisition of customers and strategic partners, incl. execution of email-marketing campaigns</li>
                   <li>Conception, planning and drafting of a product feature for coverage of damages to shipments</li>
@@ -287,15 +313,15 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseSSUF" role="button" aria-expanded="false" aria-controls="collapseSSUF">
-              <h3 class="mb-0">Intern - Business Analysis
+              <h3 class="mb-0">Business Analysis
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">Swiss Startup Factory</div>
-            <div class="collapse" id="collapseSSUF">
+            <div class="subheading mb-2">Swiss Startup Factory, Intern</div>
+            <div class="collapse" id="collapseSSUF" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Privately funded Startup Accelerator</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Privately funded Startup Accelerator</p>
+                <ul class="pl-4">
                   <li>Analysis and evaluation of startups and business models for investment decision support</li>
                   <li>Support of entrepreneurs in business development and Lean Startup methodology</li>
                   <li>Consulting projects on “digital transformation”</li>
@@ -312,15 +338,15 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <a data-toggle="collapse" href="#collapseBMW" role="button" aria-expanded="false" aria-controls="collapseBMW">
-              <h3 class="mb-0">Intern - Strategy & Planning
+              <h3 class="mb-0">Strategy & Planning
                   <i class="fas fa-angle-down fa-xs ml-3 text-secondary"></i>
               </h3>
             </a>
-            <div class="subheading mb-2">BMW</div>
-            <div class="collapse" id="collapseBMW">
+            <div class="subheading mb-2">BMW, Intern</div>
+            <div class="collapse" id="collapseBMW" data-parent="#accordion">
               <div class="card card-body border-white">
-                <p class="mb-0">Department Freigabezentrale: Strategy &amp; Planning</p>
-                <ul>
+                <p class="lead mb-0 pl-0">Department Freigabezentrale: Strategy &amp; Planning</p>
+                <ul class="pl-4">
                   <li>Development of the process for personnel planning and control</li>
                   <li>Project management office: company-wide project for the restructuring of the R&D division</li>
                   <li>Collaboration in the communication of the strategic direction</li>
@@ -483,7 +509,7 @@
             Click here for the next step
           </button>
         </div>
-        <h2 class="collapse mt-5" id="collapseVote">
+        <h2 class="mt-5 collapse" id="collapseVote">
           <span class="text-primary">Pikachu</span>
            wants you to vote for me 😉
         </h2>
