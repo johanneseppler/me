@@ -207,21 +207,3 @@ html, body {
   z-index: -1;
   opacity: 0.5;
 }
-
-#showMe {
-  -webkit-animation: cssAnimation 0s 2s forwards;
-  animation: cssAnimation 0s 2s forwards;
-  visibility: hidden;
-}
-
-@-webkit-keyframes cssAnimation {
-  to {
-    visibility: visible;
-  }
-}
-
-@keyframes cssAnimation {
-  to {
-    visibility: visible;
-  }
-}

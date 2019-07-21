@@ -31,12 +31,3 @@ html, body {
   z-index: -1;
   opacity: 0.5;
 }
-
-#showMe {
-  animation: cssAnimation 0s 2s forwards;
-  visibility: hidden;
-}
-
-@keyframes cssAnimation {
-  to   { visibility: visible; }
-}
