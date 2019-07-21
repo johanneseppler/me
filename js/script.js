@@ -6,8 +6,6 @@ function pikarun() {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = data
-  // img.style.width = '450px'
-  // img.style.height = '350px'
   img.style.width = '360px'
   img.style.height = '280px'
   img.style.transition = '4s all'
@@ -56,8 +54,8 @@ window.onload = function() {
 
     // normal options
     selector: '.background',
-    maxParticles: 350,
-    speed: 0.3,
+    maxParticles: 400,
+    speed: 0.5,
     color: [
       '#1776ed', // primary
       '#2f84ef',
@@ -66,7 +64,7 @@ window.onload = function() {
       '#76aef4',
       '#ef9a2f' // orange
     ],
-    minDistance: 70,
+    minDistance: 80,
     sizeVariations: 4,
     connectParticles: true,
 
