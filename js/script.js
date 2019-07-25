@@ -26,6 +26,13 @@ function pikarun() {
 
 }
 
+// toggle collapse arrow
+
+$('.toggler').click(function() {
+    $('i', this).toggleClass('fa-angle-down');
+    $('i', this).toggleClass('fa-angle-right');
+});
+
 // // append text
 //
 // $(window).ready(function(){
