@@ -28,9 +28,27 @@ function pikarun() {
 
 // toggle collapse arrow
 
+var coll = document.getElementsByClassName("plus");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function(i) {
+    this.classList.toggle("minus");
+    console.log("this is i: " +i );
+    var x;
+    for (x = 0; x < coll.length; x++){
+      if(this != coll[x]){
+        coll[x].classList.remove("minus")
+      }
+    }
+  });
+}
+
 $('.toggler').click(function() {
-    $('i', this).toggleClass('fa-angle-down');
-    $('i', this).toggleClass('fa-angle-right');
+  $('i', $('.toggler', '#accordion')).removeClass('fa-angle-down');
+  $('i', $('.toggler', '#accordion')).addClass('fa-angle-right');
+  $('i', this).toggleClass('fa-angle-down');
+  $('i', this).toggleClass('fa-angle-right');
 });
 
 // // append text
