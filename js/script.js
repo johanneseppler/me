@@ -45,10 +45,13 @@ for (i = 0; i < coll.length; i++) {
 }
 
 $('.toggler').click(function() {
-  $('i', $('.toggler', '#accordion')).removeClass('fa-angle-down');
-  $('i', $('.toggler', '#accordion')).addClass('fa-angle-right');
+  // toggle selected element
   $('i', this).toggleClass('fa-angle-down');
   $('i', this).toggleClass('fa-angle-right');
+  // make sure all others are uncollapsed
+  $('i', $('.toggler', '#accordion').not(this)).removeClass('fa-angle-down');
+  $('i', $('.toggler', '#accordion').not(this)).addClass('fa-angle-right');
+
 });
 
 // // append text

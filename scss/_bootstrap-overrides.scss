@@ -12,9 +12,6 @@ a {
   &:focus,
   &:active {
     color: darken($primary, 15%);
-  }
-  &:focus,
-  &:active {
     text-decoration: none !important;
   }
 }
