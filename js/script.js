@@ -1,3 +1,37 @@
+//
+
+// toggle collapse arrow
+
+$('.toggler').click(function() {
+  // toggle selected element
+  $('i', this).toggleClass('fa-angle-down');
+  $('i', this).toggleClass('fa-angle-right');
+  // make sure all others are uncollapsed
+  $('i', $('.toggler', '#accordion').not(this)).removeClass('fa-angle-down');
+  $('i', $('.toggler', '#accordion').not(this)).addClass('fa-angle-right');
+
+});
+
+// add ratings
+
+$(".stars").each(function() {
+  var i;
+  for (i = 0; i < $(this).attr('nr'); i++) {
+    $(this).append('<li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>');
+  }
+  for (; i < 5; i++) {
+    $(this).append('<li class="list-inline-item mx-0"><i class="far fa-star"></i></li>');
+  }
+});
+
+// make pikachu run
+
+$('#pika').click(function() {
+  $(this).hide();
+  $('#pikaToggle').toggle(true);
+  pikarun();
+});
+
 function pikarun() {
   "use strict"
 
@@ -25,55 +59,6 @@ function pikarun() {
   }, 5000)
 
 }
-
-// toggle collapse arrow
-
-var coll = document.getElementsByClassName("plus");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function(i) {
-    this.classList.toggle("minus");
-    console.log("this is i: " +i );
-    var x;
-    for (x = 0; x < coll.length; x++){
-      if(this != coll[x]){
-        coll[x].classList.remove("minus")
-      }
-    }
-  });
-}
-
-$('.toggler').click(function() {
-  // toggle selected element
-  $('i', this).toggleClass('fa-angle-down');
-  $('i', this).toggleClass('fa-angle-right');
-  // make sure all others are uncollapsed
-  $('i', $('.toggler', '#accordion').not(this)).removeClass('fa-angle-down');
-  $('i', $('.toggler', '#accordion').not(this)).addClass('fa-angle-right');
-
-});
-
-// // append text
-//
-// $(window).ready(function(){
-//   setTimeout(function(){
-//     $("#appendhere").append("<p class='lead mb-5'>My <span class='text-primary'>interdisciplinary background</span>,  <span class='text-primary'>professional experience</span> &amp;<span class='text-primary'>academic drive</span> make me a good fit for the program</p><p class='lead mb-5'>I'm 25 years old, half German 🇩🇪, half Italian 🇮🇹<br>  My background was originally business administration<br>but recently I have been focussing on computer science.<br><br>I love problem solving and can navigate (almost) any situation you throw me in.<br>I believe teams work best, when everyone gets to focus on what they love doing!<br>That's why you need someone who can organize and communicate<br>as well as help out with many different tasks.<br><br>That someone could be <span class='text-primary'>me</span> 🤯</p><p class='mt-5'>(Also, my humor may be questionable at times...)</p><p class='mt-1'>Want to get in touch or have any questions? <br>mail me<a href='mailto:philipp.wiedemann@tum.de'>@tum.de</a></p>")
-//   }, 2000);
-//
-// });
-
-// add ratings
-
-$(".stars").each(function() {
-  var i;
-  for (i = 0; i < $(this).attr('nr'); i++) {
-    $(this).append('<li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>');
-  }
-  for (; i < 5; i++) {
-    $(this).append('<li class="list-inline-item mx-0"><i class="far fa-star"></i></li>');
-  }
-});
 
 // Particles effect
 
