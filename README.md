@@ -1,3 +1,4 @@
 # [My web page](https://pippowie.github.io)
 
-This web page is my application to TMS.
+This is my personal homepage.
+Not always up-to-date though.
