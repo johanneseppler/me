@@ -21,7 +21,7 @@ html, body {
   /* padding: 0; */
 }
 
-.background {
+#background {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,6 +29,9 @@ html, body {
   opacity: 0.5;
 }
 
-#pikaToggle {
-  display: none;
+#canvascover {
+    position:relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 33%;
 }
