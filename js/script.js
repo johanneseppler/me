@@ -18,8 +18,8 @@ window.onload = function() {
   Particles.init({
 
     // normal options
-    selector: '#background',
-    maxParticles: 300,
+    selector: '.background',
+    maxParticles: 400,
     speed: 0.5,
     color: [
       '#1776ed', // primary
@@ -38,7 +38,7 @@ window.onload = function() {
       {
         breakpoint: 992,
         options: {
-          maxParticles: 200,
+          maxParticles: 250,
           color: [
             '#1776ed', // primary
             '#4792f1',
@@ -52,7 +52,7 @@ window.onload = function() {
       }, {
         breakpoint: 768,
         options: {
-          maxParticles: 75,
+          maxParticles: 100,
           color: '#0F5FC3',
           minDistance: 30,
           connectParticles: true
@@ -60,7 +60,7 @@ window.onload = function() {
       }, {
         breakpoint: 425,
         options: {
-          maxParticles: 33 // disables particles.js
+          maxParticles: 50 // disables particles.js
         }
       }, {
         breakpoint: 320,
