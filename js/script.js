@@ -22,11 +22,11 @@ window.onload = function() {
     maxParticles: 400,
     speed: 0.5,
     color: [
-      '#1776ed', // primary
-      '#2f84ef',
-      '#4792f1',
-      '#5ea0f3',
-      '#76aef4',
+      '#2ba654', // primary
+      '#46b469',
+      '#5ec17d',
+      '#74cf92',
+      '#8adda6',
       '#ef9a2f' // orange
     ],
     minDistance: 80,
@@ -40,9 +40,9 @@ window.onload = function() {
         options: {
           maxParticles: 250,
           color: [
-            '#1776ed', // primary
-            '#4792f1',
-            '#76aef4',
+            '#2ba654', // primary
+            '#5ec17d',
+            '#8adda6',
             '#ef9a2f' // orange
           ],
           minDistance: 50,
@@ -53,7 +53,7 @@ window.onload = function() {
         breakpoint: 768,
         options: {
           maxParticles: 100,
-          color: '#0F5FC3',
+          color: '#368751',
           minDistance: 30,
           connectParticles: true
         }

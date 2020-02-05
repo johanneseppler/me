@@ -43,7 +43,7 @@ var Particles = (function(window, document) {
         sizeVariations: 3,
         showParticles: true,
         speed: 0.5,
-        color: '#000000',
+        color: '#2ba654',
         minDistance: 120,
         connectParticles: false,
       };
